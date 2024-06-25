@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PlayPal</div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>Player Profile</h2>
+            <div class="profile-picture">
+                <img src="path/to/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h3>Username: <span id="username">John Doe</span></h3>
+                <p>Email: <span id="email">john.doe@example.com</span></p>
+            </div>
+        </section>
+        <section id="events">
+            <h2>Sporting Events</h2>
+            <div class="events-list" id="events-list">
+                <!-- Events will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

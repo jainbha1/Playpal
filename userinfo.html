@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Info - PlayPal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PlayPal</div>
+    </header>
+    <main>
+        <section id="userinfo">
+            <h2>Enter Your Information</h2>
+            <form id="userinfo-form">
+                <div>
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture">
+                </div>
+                <div>
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4"></textarea>
+                </div>
+                <div>
+                    <label for="events">Sporting Events:</label>
+                    <textarea id="events" name="events" rows="4"></textarea>
+                </div>
+                <button type="submit">Save</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

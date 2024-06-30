@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup - PlayPal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
         <div class="logo">PlayPal</div>
         <nav>
             <ul class="nav-list">
-
                 <li><a href="index.html#about">About Us</a></li>
-
                 <li><a href="login.html">Login</a></li>
-                
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -25,11 +22,9 @@
         </nav>
     </header>
     <main class="signup-page">
-        
         <div class="signup-container">
-            
             <h2>Signup</h2>
-            <form action="signup.php" method="POST">
+            <form action="/signup" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -43,6 +38,6 @@
             </form>
         </div>
     </main>
-    <script src="scripts.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
